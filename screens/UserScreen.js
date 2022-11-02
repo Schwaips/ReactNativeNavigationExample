@@ -1,16 +1,18 @@
 import { View, Text, Button, StyleSheet } from 'react-native';
 
 function UserScreen({navigation}) {
-  const openDrawerNavigation = () => {
-    navigation.toggleDrawer();
-  }
+  // uncomment for the button to open drawer menu
+  // const openDrawerNavigation = () => {
+  //   navigation.toggleDrawer();
+  // }
 
   return (
     <View style={styles.rootContainer}>
       <Text>
         This is the <Text style={styles.highlight}>"User"</Text> screen!
       </Text>
-      <Button title="Open drawer navigation" onPress={openDrawerNavigation} />
+      {/* Uncomment to have a button that opens the drawer menu */}
+      {/* <Button title="Open drawer navigation" onPress={openDrawerNavigation} /> */}
     </View>
   );
 }
